@@ -1,0 +1,57 @@
+/* Estilos de la sección 1 de la home */
+
+
+#hola {
+    
+    font-size: 20%;
+    font-family: Futura;
+    text-decoration: none;
+    color: #FFC907;
+    
+}
+
+
+
+#franjauno {
+    
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding: 5%;
+    align-items: center;
+
+}
+
+
+#columnauno {
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+#columnauno img {
+    width: 50%;
+}
+
+#columnauno p {
+    font-size: 1em;
+}
+
+
+
+#columnados {
+     
+}
+
+
+#columnados img { 
+    width: 60%;
+
+}
+
+
+#hello:hover {
+  transform: scaleX(-1);
+}
+
+
+
+

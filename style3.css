@@ -1,0 +1,86 @@
+.fila {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* La cuadrícula: cuatro columnas iguales que flotan una al lado de la otra */
+.columna {
+  width: 25%;
+  padding: 10px;
+}
+
+/* Dar estilo a las imágenes dentro de la cuadrícula */
+.columna img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.columna img:hover {
+  opacity: 1;
+}
+
+/* Borrar flotadores después de las columnas */
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* El contenedor de imagen en expansión */
+.container {
+  position: relative;
+  display:none;
+
+}
+
+/* Expansión del texto de la imagen */
+#imgtext {
+  
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 25px;
+}
+
+/* Botón que se puede cerrar dentro de la imagen */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.fila img {
+    
+    width: 60%;
+
+}
+
+#expandedImg {
+    width: 60%;
+}
+
+.parallaxfondo {
+  background-image: url("img/space0.jpg");
+
+  /* Set a specific height */
+  height: 
+      3000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 700px) {
+  
+.entrevista p{font-size: 1em;}
+.entrevista h3{font-size: 1em;}
+    }

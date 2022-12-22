@@ -1,0 +1,106 @@
+
+/* Estilos del formulario */
+
+
+form {
+    
+    background-color: black;
+    color: white;
+    padding: 5%;
+    margin: 5% 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    
+       
+    
+}
+
+form label {
+    
+    text-align: left;
+    margin-bottom: 1%;
+    font-size: 2em;
+    
+}
+
+
+form input {
+    
+    padding: 2%;
+    margin-bottom: 10%;
+}
+
+#politica {
+    
+    padding-top: 2%;
+    text-align: left;
+    
+}
+
+textarea {
+    
+    padding: 2%;
+}
+
+
+#botonformulario {
+    
+    padding: 3%;
+    font-family: Futura;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #FFC907;
+    color: black;
+    cursor: pointer; 
+    
+}
+
+#comentario {
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    height: 150px;
+  
+}
+
+#mario {
+  width:58px;
+  height:100px;
+  border:0px solid #000;
+  background-image:url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/mario-sprite.png);
+}
+
+.big {
+  image-rendering:pixelated;
+  position:relative;
+  top:-50px;
+}
+
+/* Animación CSS de caminar */
+@keyframes walk {
+  0% { background-position:0 0 }
+  100% { background-position:120px 0 }
+}
+
+/* Clase para activar la animación (mientras se pulsa tecla) */
+.caminar {
+  animation:walk .25s steps(2) infinite forwards;
+}
+
+@media only screen and (max-width: 600px) {
+    
+   label {font-size: 1em !important; 
+    }
+    #politica {
+    font-size: 0.5em !important;
+    }
+    #botonformulario {
+        font-size: 1em;
+    }   
+    
+}

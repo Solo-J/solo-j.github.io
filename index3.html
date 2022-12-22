@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+
+
+<html>
+    
+<head>
+    
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+<script src="function.js"></script>
+    
+<script src="js-galeria.js"></script>
+         
+</head>
+    
+<body>
+
+    <section class="parallaxfondo">
+        
+<nav class="topnav" id="myTopnav">
+<a href="index.html">HOME</a>
+<a href="index2.html">SOBRE MI</a>
+<a href="index3.html" style="color: #FFC907;">PORFOLIO</a>
+<a href="Formulariomail.html" style="color: ">CONTACTO</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    
+                                           
+</nav>
+   
+   
+   
+    <div class="fila">
+  <div class="columna">
+    <img src="img/Cartel.jpg" alt="Cartel realizado para trabajo docente.<br>
+        Representando de manera libre,la ley de Hick-Himan de 1953<br>"
+         onclick="expandir(this);">
+  </div>
+  <div class="columna">
+    <img src="img/paginaficticia.png" alt="Prototipado de pagina web, de fitoterápia" onclick="expandir(this);">
+  </div>
+  <div class="columna">
+    <img src="img/cosmonauta.png" alt="Tres" onclick="expandir(this);">
+  </div>
+  <div class="columna">
+    <img src="img/eclipse.png" alt="Cuatro" onclick="expandir(this);">
+  </div>
+</div>
+
+<!-- Para expandir imagen de contenido -->
+<div class="container">
+ 
+  <!-- Cerrar imagen -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expandir imagen -->
+  <img id="expandedImg">
+
+  <!-- Texto de imagen -->
+  <div id="imgtext"></div>
+</div>
+    </section>
+
+
+
+
+</body>
+
+    
+<footer></footer>
+
+</html>
