@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de mi casa</title>
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+
+
+        header {
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+            background-color: aliceblue;
+
+        }
+
+        body {
+
+            font-family: sans-serif;
+            background-image: url(img/fondo.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+
+        main {
+            padding: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        h1 {
+            padding: 5%;
+            text-align: center;
+            color: aliceblue;
+
+        }
+
+        iframe {
+
+            padding: 10%;
+            width: 95%;
+            border-radius: 50px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        button {
+
+            background-color: #d6d6d6;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+
+
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <header>
+        <a href="../html.php">Volver a inicio</a>
+    </header>
+
+    <main>
+        <h1>Mapa</h1>
+
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.2107830655236!2d-3.74973318854871!3d40.29327857134072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418a7f2e30571f%3A0x79b8a1a4d543357!2sCRN%20en%20Desarrollo%20Inform%C3%A1tico%20y%20Comunicaciones!5e0!3m2!1ses!2ses!4v1696321182280!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+        <div class="llamadas">
+
+
+
+            <button><a href="tel:+34555005500">Llamanos</a></button>
+
+            <button><a href="mailto:elcorreoquequieres@correo.com">Envianos un mail</a></button>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

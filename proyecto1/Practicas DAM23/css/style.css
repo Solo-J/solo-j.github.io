@@ -1,0 +1,61 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; /* Asegura que no hay márgenes en el body */
+    padding: 0; /* Asegura que no hay relleno en el body */
+    min-height: 100vh; /* Establece la altura mínima del body como el 100% del viewport height */
+
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(209, 208, 208);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s;
+    z-index: 1000;
+
+}
+
+.back-color{
+    background-color: antiquewhite;  
+  }
+  
+  .card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+    height: 30rem;
+  }
+  
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+    
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+/*     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ff0000; /* Cambia el color según tus preferencias */
+}
+
+

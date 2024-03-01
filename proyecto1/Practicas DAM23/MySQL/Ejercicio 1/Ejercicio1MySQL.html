@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas Entidad relación</title>
+    <link rel="icon" href="img/Lg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <style>
+        body {
+            margin: 10%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .contenedor {
+            margin-top: 200px;
+            width: 100%;
+        }
+
+        .contenedor2 {
+            margin: 10%;
+            width: 30%;
+        }
+    </style>
+
+
+    <h1 class="pb-3">Práctica 1</h1>
+
+    <p>Clínica gestión de Datos
+        <br> En una clínica se desea llevar la gestión de pacientes y médicos. <br>
+        Cada paciente se desea guardar el código, nombre, apellidos, dirección, población, provincia, código postal,
+        teléfono y fecha de nacimiento. <br>
+        De cada médico si desea guardar el código, nombre, apellidos, teléfono y especialidad. <br>
+        Se desea llevar el control de cada uno de los ingresos que el paciente hace en el hospital. <br>
+        Cada ingreso que realiza el Paciente queda registrado en la base de datos. <br>
+        De cada ingreso se guarda el código de ingreso, el número de habitación y cama en la que el paciente realiza la
+        ingreso y fecha de ingreso. <br>
+        Un médico puede atender varios ingresos, pero el ingreso de un paciente solo puede ser atendido por un único
+        médico. Un paciente puede realizar varios ingresos en el hospital. <br>
+    </p>
+
+    <div class="contenedor">
+
+        <img src="Ejercicio1.png" alt="Ejercicio 1">
+
+    </div>
+
+
+    <h1 class="py-3">Práctica 2</h1>
+
+    <p>Para una BD de una inmobiliaria, modeliza la entidad VIVIENDA, con al menos 3 atributos.</p>
+
+    <div class="contenedor2">
+
+        <img src="Ejercicio2.png" alt="Ejercicio 2">
+
+    </div>
+
+    <h1>Práctica 3</h1>
+
+    <p>Modela una entidad de una BD cualquiera, con al menos 3 atributos y uno de ellos que sea de tipo compuesto,
+        derivado o multivaluado.
+
+    </p>
+
+    <div class="contenedor2">
+
+        <img src="Ejercicio3.png" alt="Ejercicio 3">
+
+    </div>
+
+    <h1 class="py-3">Práctica 4</h1>
+
+    <p>Modela una entidad de una BD de un Hospital, con al menos 3 atributos.</p>
+
+    <div class="contenedor2">
+
+        <img src="Ejercicio4.png" alt="Ejercicio 4">
+
+    </div>
+
+    <h1 class="py-3">Práctica 5</h1>
+
+    <p>Estamos creando la base de datos para la venta online de entradas de un teatro. Queremos guardar datos de las
+        localidades: fila, asiento y precio. Y queremos guardar también datos de los clientes: nombre, apellidos, email
+        y teléfono. Modeliza la relación "CLIENTE compra LOCALIDAD". No olvides indicar el atributo clave de cada una de
+        las entidades.</p>
+    <div class="contenedor">
+
+        <img src="Ejercicio5.png" alt="Ejercicio 5">
+
+    </div>
+
+
+    
+    <h1 class="py-3">Práctica 6</h1>
+
+    <p>En un centro de estudios, se quiere guardar información sobre alumnos y asignaturas.
+        De los alumnos guardaremos sus datos personales (DNI, nombre, apellidos, teléfono...) y de cada asignatura almacenaremos su código del BOE (único para cada una), el nombre y el número de horas.
+        Cada alumno está matriculado en, al menos, una asignatura. Las asignaturas nuevas aún no tienen alumnos matriculados.
+        También hay que guardar información de los delegados de clase. Cada alumno tendrá un delegado asignado, y un alumno puede ser delegado de todos los demás de su clase. Hay alumnos que no son delegados.
+        Modeliza el diagrama entidad-relación, con entidades, atributos, relaciones, participación de cada entidad y cardinalidad de las relaciones.</p>
+    <div class="contenedor">
+
+        <img src="Ejercicio6.png" alt="Ejercicio 6">
+
+    </div> 
+
+    <h1 class="py-3">Práctica 7</h1>
+
+    <p> Se desea modelizar la siguiente información sobre las instalaciones del centro de estudios del ejercicio anterior.
+        Se desea conocer información de sus centros: dirección, localidad, número de plantas, número de aulas y metros cuadrados totales.
+        También se desea almacenar el tamaño de cada aula, si dispone de ventilación y el equipamiento que tiene. Cada aula tiene también un nombre que la identifica, único en cada centro.
+        Elabora el diagrama Entidad-Relación que refleje toda la información, y calcula la participación de cada entidad y la cardinalidad de la/s relación/es. </p>
+    <div class="contenedor">
+
+        <img src="Ejercicio7.png" alt="Ejercicio 7">
+
+    </div>
+
+    <h1 class="py-3">Práctica 8</h1>
+
+    <p>La ONG Reyes Magos sin fronteras desea hacer una base de datos para que esta Navidad todos los niños pobres de España puedan recibir sus regalos la noche de los Reyes Magos. La ONG contacta con vecinos de distintos barrios para disfrazarlos de Reyes Magos y organizarlos en grupos lúdicos que realicen eventos para que los niños los visiten y puedan formular sus peticiones. Cada niño es recibido por un Rey Mago y puede hacer una única petición, la cual queda anotada en la base de datos para posteriormente, el día 6 de enero, entregar esa petición. La ONG comprará los regalos con el dinero que distintas organizaciones benéficas aportarán a la causa. <br>
+        Los datos que interesa almacenar son los siguientes: <br>
+        De los vecinos: DNI, nombre y apellidos, Rey Mago al que encarna y los vecinos a los que ha conseguido convencer para que se unan a la causa.
+        De los niños: Nombre, dirección y el regalo que pide al Rey Mago. (Los niños no tienen DNI, y necesitarán un dato identificativo).
+        De los grupos de vecinos se necesita saber a qué Barrio pertenecen, número de integrantes del grupo y los eventos que han organizado.
+        De los eventos interesa conocer la ubicación física, la fecha, la hora y los niños asistentes.
+        Elabora el diagrama Entidad-Relación que refleje toda la información, y calcula la participación de cada entidad y la cardinalidad de las relaciones. </p>
+    <div class="contenedor">
+
+        <img src="Ejercicio8.png" alt="Ejercicio 8">
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

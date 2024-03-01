@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="icon" href="img/Lg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container p-5">
+    <h1>Práctica 14</h1>
+
+    <p>Funciones: <br> Crear un documento html con un script que defina una función que, dado un número del 1 al 7,
+        devuelva una cadena de texto indicando el día de la semana correspondiente.
+        Por ejemplo si es 1, devuelve “Es lunes”, si es 2, devuelve “Es martes”, etc.
+
+
+    </p>
+
+
+    <!--     Ejercicio 1 -->
+
+    <input class="form-control my-2" style="width: 300px;" type="number" id="numero" placeholder="Número del 1 al 7">
+
+    <button class="btn btn-secondary shadow-lg rounded" onclick="obtenerDia()">Obtener Día</button>
+
+    <p id="resultado"></p>
+
+    <!--     Ejercicio 2 -->
+    <input class="form-control my-2" style="width: 300px;" type="number" id="numero2" placeholder="Número del 1 al 7">
+
+    <button class="btn btn-secondary shadow-lg rounded" onclick="obtenerDia2()">Obtener Día</button>
+</div>
+    <script>
+
+        //Ejercicio 1
+        function obtenerDia() {
+
+            let numero = parseInt(document.getElementById("numero").value);
+
+            if (isNaN(numero) || numero < 1 || numero > 7) {
+
+                document.getElementById("resultado").textContent = "Ingresa un número válido del 1 al 7.";
+
+            } else {
+
+                let diasSemana = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+                let dia = diasSemana[numero - 1]; // Restamos 1 para ajustar al índice del arreglo.
+
+                document.getElementById("resultado").textContent = "Es " + dia;
+            }
+        }
+
+
+        //Ejercicio 2
+
+        function obtenerDia2() {
+
+            let numero = parseInt(document.getElementById("numero2").value);
+
+            if (numero === 1) {
+                return "El día es Lunes";
+            } else if ( numero === 2) {
+                return "El día es Martes";
+            } else if ( numero === 3) {
+                return "El día es Miércoles";
+            } else if ( numero === 4) {
+                return "El día es Jueves";
+            } else if ( numero === 5) {
+                return "El día es Viernes";
+            } else if ( numero === 6) {
+                return "El día es Sabado";
+            } else if ( numero === 7) {
+                return "El día es Domingo";
+            } else {
+                return "El valor intorducido no es valido";
+            } 
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</html>

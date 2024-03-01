@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Lg.png" type="image/x-icon">
+    <title>Ancestral Home</title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <!--  Logo -->
+
+            <a href="index.html" title="Logo">
+
+                <img class="logo_black" src="img/favi.webp" alt="Logo">
+            </a>
+
+            <h1>ANCESTRAL</h1>
+
+        </div>
+
+
+
+        <!--  Busqueda -->
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass fa-bounce" style="color: #ffffff;"></i>
+
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Tres Imagenes  -->
+
+        <div class="cartels" id="cartel-one">
+            <figure>
+
+                <figcaption class="text">Oswarld One</figcaption>
+               <a href="pag2.html"><img src="img/imagen1.webp" alt="cartel-one"></a>
+
+            </figure>
+
+
+        </div>
+
+        <div class="cartels" id="cartel-two">
+
+            <figure>
+
+                <figcaption class="text">Oswarld Two</figcaption>
+                <a href="pag2.html"><img src="img/imagen2.webp" alt="cartel-two"></a>
+
+            </figure>
+
+        </div>
+
+        <div class="cartels" id="cartel-three">
+            <figure>
+
+                <figcaption class="text">Oswarld Three</figcaption>
+                <a href="pag2.html"><img src="img/imagen3.webp" alt="cartel-three"></a>
+
+            </figure>
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+
+        <div class="map">
+
+            <h4>Where you can find us</h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.2107830655236!2d-3.74973318854871!3d40.29327857134072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418a7f2e30571f%3A0x79b8a1a4d543357!2sCRN%20en%20Desarrollo%20Inform%C3%A1tico%20y%20Comunicaciones!5e0!3m2!1ses!2ses!4v1696321182280!5m2!1ses!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+
+        </div>
+
+        <div class="form">
+
+            <h4>Stay connect with us</h4>
+
+            <!-- NOMBRE -->
+
+            <div class="form-group">
+                <label for="name">First Name</label>
+
+
+                <input type="text" id="name" name="name" placeholder="Escribe nombre" required>
+            </div>
+
+            <!-- APELLIDO -->
+
+            <div class="form-group">
+                <label for="name">Last Name:</label>
+
+                <input type="text" id="last_name" name="last_name" placeholder="Escribe apellido" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" name="email" placeholder="Escribe email" required>
+            </div>
+
+
+
+
+
+            <label class="newsletter">
+
+                <p>Newsletter</p>
+
+                <div class="news">
+                    <label class="textop" for="ultra">Ultra Arm</label>
+                    <input type="checkbox" id="ultra" name="ultra" required>
+                </div>
+
+
+                <div class="news">
+                    <label class="textop" for="news">All News</label>
+                    <input type="checkbox" id="news" name="news" required>
+                </div>
+
+            </label>
+
+            <div class="contein-mailto">
+
+
+                <button class="mailto"><a href="mailto:elcorreoquequieres@correo.com">Submat</a></button>
+
+            </div>
+
+
+            <ul class="social">
+                <li><i class="social fa-brands fa-instagram"></i></li>
+                <li><i class="social fa-brands fa-facebook"></i></li>
+                <li><i class="social fa-brands fa-linkedin"></i></li>
+                <li><i class="social fa-regular fa-envelope"></i></li>
+                <li><i class="social fa-solid fa-link"></i></li>
+                <li><i class="social fa-brands fa-youtube"></i></li>
+
+            </ul>
+        </div>
+
+
+
+    </footer>
+
+    <div class="street">
+
+        <h4>From the gummy bear house on lollipop street - Sprinfield - </h4>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <button id="button-top" class="show">
+
+        <i class="fa-solid fa-circle-chevron-up"></i>
+
+
+    </button>
+
+    <script>
+        var btn = $('#button-top');
+
+        $(window).scroll(function () {
+
+            if ($(window).scrollTop() > 300) {
+
+                btn.addClass('show');
+
+            } else {
+
+                btn.removeClass('show');
+            }
+
+        });
+
+        btn.on('click', function (e) {
+
+            e.preventDefault();
+
+            $('html, body').animate({ scrollTop: 0 }, '300');
+
+        });
+
+    </script>
+
+</body>
+
+</html>

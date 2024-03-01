@@ -1,0 +1,383 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Joti+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* HEADER */
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 0 5px 3px rgb(143, 143, 143);
+  z-index: 1000;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+}
+
+nav a {
+  font-family: 'Jaldi', sans-serif;
+  color: black;
+  font-size: 26px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5%;
+}
+
+nav a:hover {
+  color:#3D1CBF;
+}
+
+.morada {
+  color:#3D1CBF;
+  font-weight: 900;
+}
+
+.franja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  padding: 2%;
+  border-left: 2px solid rgb(0, 0, 0);
+
+}
+
+.logo {
+  width: 40%;
+}
+
+/* MAIN */
+
+main {
+margin-top: 20vh;
+}
+
+h1 {
+  font-family: 'Joti One', cursive;
+  font-weight: 100;
+  font-size: 56px;
+  text-align: center;
+  margin: 3%;
+
+}
+
+/* SECCION 1 */
+
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  margin: 10%;
+  gap: 30px;
+}
+
+.trescolumnas img {
+  height: 180px;
+  margin-bottom: 10%;
+  transition: 1s;
+}
+
+.trescolumnas {
+  max-height: 60vh;
+  border-color: 10px solid black;
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+
+
+.trescolumnas img:hover {
+  transform: scale(-0.5);
+  transition: 3s;
+
+}
+
+
+.trescolumnas h3 {
+  font-family: 'Joti One', cursive;
+  font-size: 30px;
+  padding-bottom: 3vh;
+
+}
+
+.trescolumnas p {
+  font-family: 'Jaldi', sans-serif;
+  font-size: 20px;
+  color: gray;
+
+}
+
+.contact {
+  border: 2px solid gray;
+  width: 100%;
+}
+
+/* SECCION 2 */
+
+
+
+.seccion-dos {
+  background-image: url(../img/imagen-contacto.jpg);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+
+}
+
+.formulario {
+  background-color: #ffffff;
+  margin: 8%;
+  padding: 2%;
+  width: 550px;
+  height: 650px;
+  border-radius: 10px;
+
+}
+
+.formulario label  {
+  font-size: 30px;
+  font-family: 'Joti One', cursive;
+
+}
+
+.formulario h3 {
+  padding: 2%;
+  font-size: 46px;
+  font-family: 'Joti One', cursive;
+
+}
+
+
+
+form {
+  padding: 5%;
+}
+
+input {
+  margin:0 0 5% 0;
+  padding: 5%;
+  width: 100%;
+  border-radius: 35px;
+  background-color: #C6BBF5;
+}
+
+button {
+  font-family: 'Joti One', cursive;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  gap:20%;
+  font-size: 1.5em;
+  font-weight: 600;
+  background-color: #3D1CBF;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  padding: 3%;
+  width: 100%;
+  box-shadow: 3px 3px 5px#888888;
+
+
+
+}
+
+button:hover {
+  background-color: #C6BBF5;
+  color: black;
+}
+
+.boton {
+  padding: 2%;
+  display:flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.description {
+  background-color: #ffffff;
+  margin: 8%;
+  padding: 2%;
+  width: 550px;
+  height: 250px;
+  border-radius: 10px;
+
+}
+
+.description h3 {
+  padding: 0 5% 0 5%;
+  font-size: 30px;
+  font-family: 'Joti One', cursive;
+
+}
+
+.description p {
+  padding: 5% 5% 0 5%;
+  font-size: 20px;
+  color: gray;
+  font-family: 'Jaldi', sans-serif;
+
+}
+
+footer {
+  font-family: 'Jaldi', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3D1CBF;
+
+}
+
+/* Boton para subir arriba*/
+#button-top {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+  
+  }
+
+  #button-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .scroll-up{
+    font-size: 60px;
+  }
+
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    font-size: 5em;
+    text-shadow: 0px 5px 5px#868686;
+}
+
+.animacion-whatssapp:hover {
+    animation-name:whatssapp;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+/* ANIMACION WHASSAPP */
+
+  @keyframes whatssapp {
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform:scale(2);
+
+    }
+
+    50% {
+        transform: scale(3);
+
+    }
+
+    75% {
+        transform: scale(2);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+  header {
+      justify-content: center;
+      height: 110px;
+  }
+
+
+  h1 {
+      margin-top: 0;
+  }
+
+
+.seccion-uno {
+  flex-direction: column;
+}
+
+.section-1 {
+  flex-direction: column;
+
+
+}
+
+.seccion-dos {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+}
+
+@media screen and (max-width:700px) {
+
+  header {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    flex-direction: column;
+
+}
+header a {
+  text-align: center;
+}
+
+
+}

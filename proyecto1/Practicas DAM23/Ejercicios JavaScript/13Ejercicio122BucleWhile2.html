@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles While</title>
+    <link rel="icon" href="img/Lg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container p-5">
+        <h1>Práctica 13</h1>
+
+        <p>Busqueda de número: <br> Crea una aplicación web que permita al usuario buscar un número específico dentro de
+            una
+            lista predefinida de
+            números. La interfaz de usuario incluirá un input de números y un botón "Buscar".
+
+            El usuario ingresará un número en el input y la aplicación verificará si el número ingresado se encuentra en
+            la
+            lista. Si se encuentra, la aplicación mostrará un mensaje indicando que el número se encontró en la lista.
+
+            Si no se encuentra, mostrará un mensaje indicando que el número no se encontró en la lista.
+
+        </p>
+
+
+        <input type="number" class="form-control my-2" style="width: 300px;" id="numeroBuscado" placeholder="Número a buscar">
+
+        <button id="miBoton" class="btn btn-secondary shadow-lg rounded">Click aquí</button>
+    </div>
+
+    <p id="resultado"></p>
+
+    <script>
+        // Lista predefinida de números .ARRAY.
+        let listaNumeros = [1, 5, 10, 20, 50, 100];
+
+        function buscarNumero() {
+            let numeroBuscado = parseInt(document.getElementById("numeroBuscado").value);
+
+            if (isNaN(numeroBuscado)) {
+                document.getElementById("resultado").textContent = "Ingresa un número válido.";
+                return;
+            }
+
+            let encontrado = false;
+            let i = 0;
+
+            // Hace que se repita la función
+            while (i < listaNumeros.length) {
+
+                if (listaNumeros[i] === numeroBuscado) {
+                    encontrado = true;
+                    break;
+                }
+
+                i++;
+            }
+
+            if (encontrado) {
+
+                document.getElementById("resultado").textContent = "El número " + numeroBuscado + " se encuentra en la lista.";
+
+            } else {
+
+                document.getElementById("resultado").textContent = "El número no " + numeroBuscado + " se encuentra en la lista.";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

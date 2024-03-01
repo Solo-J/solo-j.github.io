@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <a href="../html.php">Volver a inicio</a>
+    </header>
+
+    <main>
+        <form class="form-register" action="">
+
+            <h1>TOTAL FORM</h1>
+
+            <!-- NOMBRE -->
+
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+
+                <!-- required para campo obligatorio -->
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe nombre" required>
+            </div>
+
+            <!-- APELLIDO -->
+
+            <div class="form-group">
+                <label for="nombre">Apellido:</label>
+
+                <!-- required para campo obligatorio -->
+                <input type="text" id="apellido" name="apellido" placeholder="Escribe apellido" required>
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+
+                <!-- required para campo obligatorio -->
+                <input type="email" id="email" name="email" placeholder="Escribe email" required>
+            </div>
+
+
+            <!-- TELEFONO -->
+
+            <div class="form-group">
+                <label for="tel">Telefono:</label>
+
+                <!-- required para campo obligatorio -->
+                <input type="tel" id="telefono" name="tel" pattern="[0-9]*" placeholder="Escribe telefono" required>
+            </div>
+
+            
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+
+                <!-- required para campo obligatorio -->
+                <input type="password" id="password" name="password" placeholder="Escribe password" required>
+            </div>
+
+            <!-- FECHA -->
+
+            <div class="form-group">
+                <label for="date">Fecha nacimiento:</label>
+
+                <!-- required para campo obligatorio -->
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <!-- IDENTIFICACION -->
+
+            <div class="form-group">
+                <label for="indentificacion">N. de identificación:</label>
+
+                <!-- required para campo obligatorio -->
+                <input type="number" id="identificion" name="identificion" min="1000" max="9999"
+                    placeholder="N. identificación" required>
+            </div>
+
+            <!-- SELECTOR -->
+
+            <div class="form-group">
+
+                <label for="animo">Estado de ánimo:</label>
+
+                <select name="animo" id="animo">
+
+                    <option value="opcion1" hidden selected disabled>Seleccionar estado</option>
+                    <!-- hidden para no selecionar, selected por defecto y disabled deshabilitado -->
+                    <option value="opcion2">Super Bien</option>
+                    <option value="opcion3">Increible</option>
+                    <option value="opcion4">Sueño</option>
+                    <option value="opcion5">Nose</option>
+                </select>
+
+            </div>
+
+            <!-- RADIO BOTTON -->
+
+            <div class="form-group-radio">
+                <label>¿Estás despierto?</label>
+                
+                <input type="radio" id="si" name="despierto" value="si">
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="despierto" value="no">
+                <label for="no">No</label>
+
+
+            </div>
+
+
+            <!-- ENVIO DE ARCHIVO -->
+
+            <div class="form-group">
+                <label for="archivo">Subir archivo:</label>
+
+                <input type="file" id="archivo" name="archivo">
+            </div>
+
+
+            <!-- COMENTARIOS -->
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+
+                <textarea name="comentarios" id="comentarios" cols="15" rows="4" placeholder="Deja tu comentario"
+                    maxlength="50"></textarea>
+                <!-- Para columnas, filas cols y rows, para maximo numero de caracteres maxlength -->
+            </div>
+
+
+            <!-- CHECKBOX -->
+
+            <div class="form-group-checkbox">
+
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+
+
+            </div>
+
+
+            <!-- BOTON ENVIAR -->
+
+            <div class="form-group">
+
+            <button type="submit">Enviar</button>
+            </div>
+
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <a>Formulario 2023</a>
+    </footer>
+
+</body>
+
+</html>

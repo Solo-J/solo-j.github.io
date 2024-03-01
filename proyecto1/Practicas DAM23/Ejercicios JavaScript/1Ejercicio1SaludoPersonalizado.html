@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo Personalizado</title>
+    <link rel="icon" href="img/Lg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+</head>
+
+<body>
+    <div class="container p-5">
+        <h1>Práctica 1</h1>
+
+        <p>Ejercicio 1: Saludo personalizado
+
+            Crea un programa que solicite al usuario su nombre y luego muestre un mensaje de saludo personalizado en un
+            cuadro de diálogo.
+        </p>
+        <button id="miBoton" class="btn btn-secondary shadow-lg rounded">Click aquí</button>
+    </div>
+
+
+    <script>
+        // Recogemos una referencia al botón por su ID.
+        let boton = document.getElementById("miBoton");
+
+        // Agrega un escuchador de eventos al botón.
+        boton.addEventListener("click", function () {
+
+            // Muestra un cuadro de diálogo prompt y almacena lo que el usuario escriba.
+            let solicitud = prompt("Introduce tu Usuario, por favor");
+
+            // Comprueba si el usuario ingresó un nombre
+            if (solicitud) {
+
+                document.write('<h2 class="text-center"> Bienvenido solicitud 👋</h2>');
+
+            } else {
+                document.write('<h2 class="text-center">No has introducido tu Usuario</h2>');
+
+
+            }
+
+
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

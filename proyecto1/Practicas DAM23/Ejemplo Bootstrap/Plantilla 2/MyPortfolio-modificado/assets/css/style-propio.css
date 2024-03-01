@@ -1,0 +1,44 @@
+body {
+  font-family: "Inconsolata", monospace;
+  color: #fff;
+  background-color: #000;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+.filters a.active {
+    color: #777;
+
+}
+
+a:hover {
+  color: #777;
+}
+
+.filters a.active:before {
+    background-color: #fff;
+}
+
+.filters a {
+    color: #fff;
+}
+
+.testimonial-wrap {
+    background-color: #000;
+    
+}
+
+
+.burger:before,
+.burger span,
+.burger:after {
+    background: #fff;
+}
+
+#axe {
+  border-radius: 0;
+
+}

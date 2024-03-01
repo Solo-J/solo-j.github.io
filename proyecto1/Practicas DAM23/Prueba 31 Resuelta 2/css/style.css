@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* HEADER */
+
+header {
+    padding: 2%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.search {
+    margin: 5% 20%;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #E6E6E6;
+    font-size: 20px;
+    box-shadow: 0px 2px 3px #888888 inset;
+}
+
+
+.logo-black {
+    width: 70px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 40%;
+    font-size: 30px;
+    margin-right: 100px;
+}
+
+/* MAIN */
+
+main {
+    margin-top: 10%;
+
+}
+
+.franja-amarilla {
+
+    border-top: 25px solid #E2AE27;
+}
+
+
+h2 {
+
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+    font-size: 5em;
+    text-align: center;
+    margin: 1%;
+}
+
+/* SECCION 1 */
+
+.seccion-primera {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    margin: 10%;
+
+}
+
+.articulo-1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+
+
+}
+
+.articulo-1 h3 {
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.articulo-1 p {
+    margin-top: 10%;
+    font-size: 1.5em;
+
+}
+
+.ojo {
+    height: 300px;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 5em;
+    font-weight: 100;
+
+}
+
+/* SECCION 2 */
+
+
+.seccion-segunda {
+    margin-bottom: 10%;
+    
+    
+}
+.tres-imagenes {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2%;
+}
+
+.imagenes-3 {
+    border-radius: 50em;
+    width: 60%;
+
+
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 2em;
+    font-weight: 100;
+
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 2em;
+    font-weight: 100;
+
+
+}
+
+/* SECCION 3 */
+
+.seccion-tercera {
+    display: flex;
+    background-color: black;
+    padding: 10% 20% 10% 10%;
+    height: 300px;
+    position: relative;
+    z-index: 900;
+
+
+
+}
+
+.franja-arriba {
+    margin-bottom: -5%;
+    height: 400px;
+    background-color: black;
+    transform: skewY(356deg);
+
+
+}
+
+.franja-abajo {
+    margin-top: -5%;
+    height: 400px;
+    background-color: black;
+    transform: skewY(356deg);
+
+}
+
+.fantasma {
+    max-height: 350px;
+
+}
+
+.articulo-tres {
+    padding: 10%;
+}
+
+.articulo-tres h3,
+.articulo-tres p {
+    color: white;
+    margin: 0 50px;
+    text-align: left;
+}
+
+
+/* SECCION 4 */
+
+
+.seccion-cuarta {
+    margin: -5%;
+    background-image: url(../img/pachamama.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.formulario {
+    background-color: #E2AE27;
+    margin: 10%;
+    padding: 2%;
+    box-shadow: 5px 5px 3px #888888;
+    border-radius: 3%;
+    width: 250px;
+    height: 350px;
+
+}
+
+.formulario h3, label  {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+}
+
+
+.formulario h4 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+
+
+}
+
+form {
+    margin-top:15%;
+    padding: 10%;
+}
+
+
+
+
+input {
+    margin:0 0 5% 0;
+    padding: 5%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px grey inset;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    gap:20%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    width: 80%;
+
+
+
+}
+
+.boton {
+    
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10%
+}
+
+.icono-planta {
+    height: 35px;
+    
+}
+
+/* FOOTER */
+
+
+.franja-negra {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    background-color: black;
+
+
+}
+
+li {
+    list-style: none;
+    padding-left: 30%;
+    width: 200px;
+    line-height: 2em;
+
+}
+
+.verde {
+    color: #41E227;
+}
+
+.rojo {
+    color: #EB5252;
+    border-left: 1px solid #EB5252;
+}
+
+.amarillo {
+    color: #E2AE27;
+    border-left: 1px solid #E2AE27;
+}
+
+.logo-color {
+    margin-top: 30%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* FOOTER 2*/
+
+.footer-dos {
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1% 1%;
+
+}
+
+
+.logo-black {
+    margin: 1%;
+
+}
+
+.titulo-footer-dos {
+    display: grid;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1050px) {
+
+    header {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: aliceblue;
+        z-index: 1000;
+    }
+
+    h2 {
+
+        font-family: 'Just Me Again Down Here', cursive;
+        font-weight: 100;
+        font-size: 3em;
+        text-align: center;
+        margin: 1%;
+    }
+
+
+    .articulo-1 h3 {
+        font-size: 2em;
+
+    }
+    
+    .articulo-1 p {
+        margin-top: 10%;
+        font-size: 1em;
+    
+    }
+    
+    .ojo {
+        height: 150px;
+    
+    }
+
+
+    .ojo-imagen {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    h1 {
+
+        font-size:3em;
+    }
+
+    .fantasma {
+        max-height: 250px;
+    
+    }
+
+    .franja-arriba {
+        margin-bottom: -5%;
+        height: 100px;
+    
+    
+    }
+    
+    .franja-abajo {
+        margin-bottom: -5%;
+        height: 100px;
+    
+    }
+    
+    .articulo-tres {
+        padding: 1%;
+    }
+    
+    .seccion-tercera {
+        padding: 5% 10% 5% 5%;
+
+    }
+
+    .articulo-tres {
+        padding:0 10%;
+
+    }
+
+    }
+
+    @media screen and (max-width:600px) {
+
+        .search {
+            margin: 5% 5%;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #E6E6E6;
+            font-size: 15px;
+            box-shadow: 0px 2px 3px #888888 inset;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+
+        main {
+            margin-top: 15%;
+        
+        }
+
+        .seccion-primera {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 15% 5%;
+        
+        }
+        
+        .articulo-1 {
+            margin: 10%;
+            display: flex;
+            flex-direction: column;
+
+    
+        
+        
+        }
+
+    }
+
+

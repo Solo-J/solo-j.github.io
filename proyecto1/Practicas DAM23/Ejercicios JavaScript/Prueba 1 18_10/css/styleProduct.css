@@ -1,0 +1,103 @@
+.menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu a {
+    margin: 2vh;
+    text-decoration: none;
+    color: beige;
+    font-size: 24px;
+
+
+}
+
+.menu a:hover {
+    color: brown;
+    text-decoration: line-through;
+}
+
+main {
+    justify-content: space-around;
+}
+
+.burger {
+    font-size: 35px;
+    display: none;
+    /* Inicialmente oculto en pantallas más grandes */
+    color: black;
+}
+
+.burger:hover {
+    color: brown;
+}
+
+.cerrar {
+    font-size: 35px;
+    display: none;
+    color: black;
+}
+
+@media screen and (max-width:1200px) {
+
+    .menu .titles {
+        font-size: 15px;
+    }
+
+}
+
+@media all and (max-width:900px) {
+    
+    .search {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        /* Ocultar menú en pantallas pequeñas */
+    }
+    .menu .titles {
+        font-size: 24px;
+    }
+
+    .burger {
+        margin: 10%;
+        display: block;
+        z-index: 999;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: beige;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+
+    .menu.active a {
+        color: black;
+        width: 100%;
+        padding-left: 40%;
+    }
+
+    .menu.active a:hover {
+        color: brown;
+    }
+
+    .barras {
+        color: rgb(151, 151, 151);
+    }
+
+    .barras:hover{
+        color: brown;
+    }
+    
+}

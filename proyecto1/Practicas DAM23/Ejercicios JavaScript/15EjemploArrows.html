@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ejemplo Arrows</title>
+   <link rel="icon" href="img/Lg.png" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+   <style type="text/css">
+      #body {
+         background-color: white;
+      }
+
+      #cuadrado {
+         background-color: #f00e0e;
+         border-radius: 15px;
+         height: 110px;
+         position: relative;
+         width: 110px;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 40vh;
+         transition: 0.3s;
+      }
+   </style>
+</head>
+
+<body id="body">
+   <div class="container p-5">
+      <h1 id="titulo">Práctica 15 movimiento color</h1>
+
+      <p id="parrafo">Pulsa las teclas flecha inzquierda o a para que nuestro cuadrado se vuelva naranja. <br>
+         Para que nuestro cuadrado cambie a rosa tendras que pulsar la flecha derecha o la tecla d.
+      </p>
+
+      <div id="cuadrado"></div>
+   </div>
+   <script>
+
+
+      let estilo = document.getElementById('cuadrado');
+      let estilo2 = document.getElementById('body');
+      let titulo = document.getElementById('titulo');
+      let parrafo = document.getElementById('parrafo');
+
+      document.addEventListener('keyup', function (e) { //e palabra reservada 
+         if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'ArrowRight' || e.key === 'd') {
+            estilo.style.background = '#f00e0e';
+            estilo.style.scale = '1';
+            estilo2.style.background = '#ffffff';
+            titulo.style.color = '#000000';
+            parrafo.style.color = '#000000';
+
+         }
+      });
+
+      document.addEventListener('keydown', function (e) { //e palabra reservada 
+         if (e.key === 'ArrowLeft' || e.key === 'a') {
+            estilo.style.background = '#f4a130';
+            estilo.style.scale = '1.5';
+         }
+      });
+
+      document.addEventListener('keydown', function (e) {
+         if (e.key === 'ArrowRight' || e.key === 'd') {
+            estilo.style.background = '#f00ea2';
+            estilo.style.scale = '1.5';
+         }
+      });
+
+      document.addEventListener('keydown', function (e) { //e palabra reservada 
+         if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'ArrowRight' || e.key === 'd') {
+            estilo2.style.background = '#000000';
+
+
+         }
+      });
+
+      document.addEventListener('keydown', function (e) { //e palabra reservada 
+         if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'ArrowRight' || e.key === 'd') {
+            titulo.style.color = '#ffffff';
+            parrafo.style.color = '#ffffff';
+         }
+
+      });
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      </script>
+</body>
+
+</html>
+
+
+<!--  la variable e es un parámetro que actúa como una variable local en las funciones anónimas que se pasan como manejadores de eventos. En este contexto, e representa el objeto del evento que está siendo manejado.
+   
+es un parámetro que representa el objeto del evento que está siendo manejado por la función Mi_función. En este caso, la letra e es una convención comúnmente utilizada para referirse al objeto del evento. Puedes nombrar este parámetro como desees, pero e es una abreviatura comúnmente utilizada para representar el evento. -->

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>16. Menu Hamburgesa</title>
+    <link rel="icon" href="img/Lg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        width: 100%;
+        justify-content: space-between;
+        background-color: cadetblue;
+        padding: 2% 5%;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .menu a {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu a:hover {
+        color: brown;
+        text-decoration: line-through;
+    }
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .burger {
+        font-size: 35px;
+        display: none;
+        /* Inicialmente oculto en pantallas más grandes */
+        color: black;
+    }
+
+    .burger:hover {
+        color: brown;
+    }
+
+    .cerrar {
+        font-size: 35px;
+        display: none;
+        color: black;
+    }
+
+    @media all and (max-width:700px) {
+        .menu {
+            display: none;
+            /* Ocultar menú en pantallas pequeñas */
+        }
+
+        .burger {
+            display: block;
+            z-index: 999;
+        }
+
+        .menu.active {
+            display: flex;
+            flex-direction: column;
+            background-color: cadetblue;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+
+        .menu.active a {
+            width: 100%;
+            padding-left: 40%;
+        }
+    }
+</style>
+
+
+<body>
+
+    <header>
+        <div class="logo">Web menu Hamburgesa</div>
+
+        <nav class="menu">
+
+            <a href="#" class="item"><i class="fa-solid fa-house"></i> Home</a>
+
+            <a href="#" class="item"><i class="fa-solid fa-laptop-file"></i> Services</a>
+
+            <a href="#" class="item"><i class="fa-solid fa-square-rss"></i> Blog</a>
+
+            <a href="#" class="item"><i class="fa-regular fa-address-card"></i> Contact</a>
+
+        </nav>
+
+        <a class="burger" onclick="menuDesplegable()">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </a>
+
+        <a class="cerrar">
+
+            <i class="fa-regular fa-rectangle-xmark"></i>
+
+        </a>
+
+    </header>
+
+    <script>
+
+        let menu = document.querySelector(".menu");
+        let botonBurger = document.querySelector(".burger i");
+
+        function menuDesplegable() {
+            menu.classList.toggle("active"); //toggle para activar, desactivarla
+            botonBurger.classList.toggle("fa-rectangle-xmark");
+
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

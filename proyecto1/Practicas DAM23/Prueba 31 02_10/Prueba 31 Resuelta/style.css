@@ -1,0 +1,852 @@
+/* Fuentes importadas desde Google Fonts */
+
+/* font-family: 'Just Me Again Down Here', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+
+/* font-family: 'Karla', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Karla:wght@300&display=swap');
+/* -bold - font-family: 'Karla', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+
+/* --------- General styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Karla', sans-serif;
+    font-size: 100%;
+}
+
+/* --------- Header styles -------- */
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /*Cabecera fija arriba*/
+    position: fixed;
+    z-index: 1000;
+    /* Valor de z-index alto */
+    padding: 2.5vh 3%;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* --------- Logo styles -------- */
+.logo {
+    width: 50px;
+}
+
+/* --------- Search styles -------- */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 50%;
+    padding: 0.5% 2%;
+}
+
+input[type="search"] {
+    background-color: transparent;
+    outline: none;
+    padding: 7px;
+    border: none;
+    width: 100%;
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+/* --------- Menu icons styles -------- */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+nav .fa-solid {
+    font-size: 200%;
+}
+
+/* --------- Main styles -------- */
+
+main {
+    padding-top: 5vw;
+}
+
+/* --------- Section ONE styles -------- */
+.section-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.art-section-one {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 181, 9);
+}
+
+
+.art-section-two {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(217, 39, 39, 0.76);
+
+}
+
+.section-one img {
+    width: 50%;
+    height: 46vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.art-section-two img {
+    width: 50%;
+    height: 46vh;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.desc-section-one,
+.desc-section-two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+
+
+}
+
+.desc-section-one h3,
+.desc-section-two h3 {
+    font-size: 250%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+    line-height: 100%;
+    margin-bottom: 5%;
+}
+
+
+
+/* ------- Section Two Styles  -------- */
+
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.section-two h2 {
+    text-align: center;
+    font-size: 350%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+}
+
+.services-section-two {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+    margin: 5%;
+}
+
+.services {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.services img {
+    width: 50%;
+}
+
+
+
+.services h3 {
+    margin-block: 7% 3%;
+    font-size: 200%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+    line-height: 100%;
+    text-align: center;
+}
+
+.services p {
+
+    text-align: center;
+    font-size: 90%;
+}
+
+/* ------- Section Three Styles  -------- */
+
+/* ------- Inclinación superior e inferior  -------- */
+.skew-top {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    transform: skewY(-3deg);
+    margin-bottom: -80px;
+
+}
+
+.skew-bottom {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    transform: skewY(-3deg);
+    margin-top: -80px;
+}
+
+/* ------- Section Three Styles Images -------- */
+.section-three {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 0 10% 5% 10%;
+    position: relative;
+    z-index: 999;
+
+}
+
+.section-three-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.section-three-top img {
+    width: 30%;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+/* ------- Section Three Styles Text and phantom -------- */
+
+.section-three-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5%;
+    margin-top: 5%;
+
+}
+
+.section-three-bottom img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+
+}
+
+.section-three-desc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.section-three-desc h3 {
+    font-size: 250%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+.section-three-bottom img {
+    animation-name: ghostdance;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.section-three-bottom img:hover {
+    animation-name: ghostdance;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.section-three-bottom img:active {
+    background: radial-gradient(red, rgb(0, 0, 0));
+}
+
+
+@keyframes ghostdance {
+
+    0% {
+        transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+    }
+
+    25% {
+        transform: matrix(0.4, 0, 0.5, 1.2, 60, 10);
+
+
+    }
+
+    50% {
+        transform: matrix(0, 1, 1, 0, 0, 0);
+
+    }
+
+    75% {
+        transform: matrix(0.1, 1, -0.3, 1, 0);
+
+    }
+
+    100% {
+        transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+
+    }
+}
+
+/* ------- Section Four Styles -------- */
+
+
+
+.section-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.section-four-h3 {
+    font-family: 'Just Me Again Down Here', cursive;
+    padding-top: 5%;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+
+.section-four-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    gap: 25px;
+}
+
+.options h4 {
+    font-size: 175%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+    line-height: 100%;
+    text-align: center;
+}
+
+.button-img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.option-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 218, 34);
+    width: 100%;
+    height: 57px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.option-button p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Just Me Again Down Here', cursive;
+}
+
+.option-button img {
+    width: 30px;
+}
+
+.smaller img {
+    width: 20px;
+}
+
+
+/* ------- Section Five Styles -------- */
+
+.section-five {
+    background-image: url(imagenes/imagen-13.png);
+    width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(1.1) contrast(1.3) saturate(2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10%;
+    margin-top: 10%;
+
+}
+
+.section-five-text {
+    background-color: white;
+    width: 25%;
+    height: auto;
+    position: absolute;
+    text-align: start;
+    padding: 3%;
+    border-radius: 30px 30px 30px 0px;
+}
+
+.section-five-text h3 {
+
+    font-size: 250%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+    line-height: 100%;
+    margin: 10% 10%;
+}
+
+.section-five-text p {
+    font-size: 100%;
+    margin: 10%;
+
+}
+
+.section-five-text p .bold {
+    font-weight: bold;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-top {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 4% 6%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    width: 100px;
+
+}
+
+.footer-top-nav-container {
+    margin-right: 10%;
+    display: flex;
+    gap: 10px;
+    margin-right: 0;
+}
+
+.footer-top-nav-container nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 7vw;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-top-nav-container a {
+    text-decoration: none;
+}
+
+.nav-2 {
+    border-left: 1px solid rgb(217, 39, 39);
+}
+
+.nav-3 {
+    border-left: 1px solid rgb(224, 181, 9);
+
+}
+
+.nav-1 a {
+    color: rgb(34, 196, 34);
+}
+
+.nav-2 a {
+    color: rgba(217, 39, 39);
+
+}
+
+.nav-3 a {
+    color: rgb(179, 179, 22);
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 1% 5%;
+}
+
+.footer-bottom p {
+    font-size: 200%;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 100;
+
+}
+
+.footer-bottom .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.footer-bottom .social-icons a {
+    width: 50px;
+}
+
+.footer-bottom .social-icons img {
+    width: 50px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 100px;
+    left: 40px;
+    font-size: 5em;
+    text-shadow: 0px 5px 5px#868686;
+    z-index: 999;
+}
+
+.animacion-whatssapp:hover {
+    animation-name: whatssapp;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+.section-three-top img {
+    border: 5px solid white;
+    border-radius: 50%;
+    transition: border-radius 1s, transfor 1s;
+
+}
+
+.section-three-top img:hover {
+    border-radius: 3%;
+    border: 5px solid orange;
+    transform: scale(1.2);
+}
+
+.options:hover {
+    border-radius: 2%;
+    box-shadow: 2px 2px 11px #868686;
+    transform: scale(1.2);
+    filter: brightness(1.2) saturate(1.2);
+    background-color: burlywood;
+}
+
+.options:hover .option-button img {
+    filter: invert(100%);
+}
+
+.options:hover .option-button {
+    color: white;
+    background-color: black;
+}
+
+
+@media screen and (max-width:900px) {
+
+    header {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: aliceblue;
+        z-index: 1000;
+    }
+
+
+    main h2 {
+        font-size: 1.5em;
+
+    }
+
+    main p {
+        padding-bottom: 10%;
+
+    }
+
+    .art-section-one,
+    .art-section-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .art-section-one img,
+    .art-section-two img {
+        width: 100%;
+    }
+
+    .services-section-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .services {
+        width: 50%;
+
+    }
+
+
+    .section-three-top,
+    .section-three-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .section-three-top img {
+        margin-bottom: 10%;
+        width: 50%;
+
+    }
+
+    .section-three-desc h3 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .section-three-desc p {
+        font-size: 12px;
+    }
+
+    .section-four-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+    .options {
+        width: 50%;
+
+    }
+
+    .option-button p {
+        padding: 0%;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width:600px) {
+
+
+    .options h4 {
+        padding: 0 0 3px 0;
+
+    }
+
+
+    .desc-section-one,
+    .desc-section-two {
+        width: 80%;
+        margin: 15% 0;
+
+
+    }
+
+    .desc-section-one p,
+    .desc-section-two p {
+        font-size: 90%;
+
+    }
+
+    .desc-section-one h3,
+    .desc-section-two h3 {
+        font-size: 200%;
+
+    }
+
+    .section-two h2 {
+        font-size: 250%;
+
+    }
+
+
+    .seccion-cuarta h4 {
+        padding: 5%;
+
+    }
+
+
+    li {
+        list-style: none;
+        padding-left: 10%;
+        width: 100px;
+        line-height: 2em;
+
+    }
+
+    .section-five-text {
+        width: 60%;
+        height: 50%;
+
+    }
+
+
+    .section-four-h3 {
+        font-size: 36px;
+        margin-top: 25%;
+    }
+
+    .section-five-text h3 {
+
+        font-size: 150%;
+        font-weight: 100;
+        margin-bottom: 15%;
+
+    }
+
+    .section-five-text p {
+        font-size: 12px;
+
+    }
+
+
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logo-footer {
+        margin-bottom: 15%;
+
+
+    }
+
+    .nav-2 {
+        border-left: none;
+    }
+
+    .nav-3 {
+        border-left: none;
+
+    }
+
+    .footer-bottom {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        padding: 10%;
+
+    }
+}
+
+
+@keyframes whatssapp {
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(2);
+
+    }
+
+    50% {
+        transform: scale(3);
+
+    }
+
+    75% {
+        transform: scale(2);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
